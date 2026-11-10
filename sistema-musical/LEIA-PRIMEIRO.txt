@@ -1,0 +1,47 @@
+SISTEMA MUSICAL — FASE 2 COMPLETA
+
+1. Tenha o XAMPP instalado no Windows.
+2. Extraia a pasta sistema-musical para C:\xampp\htdocs\
+   A estrutura deve ser C:\xampp\htdocs\sistema-musical\login.php
+3. No painel do XAMPP, clique em Start para Apache e MySQL.
+4. Abra no navegador: http://localhost/sistema-musical/instalar.php
+5. Use o usuário e a senha do SEU MySQL. No XAMPP padrão:
+   usuário root e senha vazia. Se você definiu outra senha, informe-a.
+6. Clique em Preparar banco e iniciar.
+7. Entre com usuário admin e senha 123.
+
+Não precisa importar o SQL manualmente nem gerar a senha.
+Se admin já existia no seu banco, a instalação mantém sua senha atual.
+
+USO
+Cadastre um artista, cadastre músicas para ele e consulte a biblioteca.
+Você pode editar e excluir músicas, filtrar por artista, gênero ou busca,
+enviar fotos e capas JPG/PNG de até 5 MB e abrir o vídeo no YouTube.
+Um artista com músicas não pode ser excluído: remova as músicas primeiro.
+O botão Sair encerra o acesso; as páginas internas exigem login.
+
+ATENÇÃO PARA ABRIR
+Use o endereço http://localhost/... no navegador.
+Live Server do VS Code e abrir arquivo com duplo clique não executam PHP.
+Requer PHP 8.0+ com mysqli. GD é usado para reduzir as imagens;
+sem GD, a imagem validada é salva no tamanho original.
+Apache deve usar sua porta padrão 80; se configurado em outra porta,
+use essa porta na URL, por exemplo http://localhost:8080/sistema-musical/.
+
+SE A CONEXÃO FALHAR DEPOIS
+Confira config.php (host, usuário, senha, nome do banco e porta).
+Se MySQL usa outra porta, altere porta em config.php antes de instalar.
+A instalação não apaga tabelas ou registros. instalado.lock bloqueia
+novas instalações. Não apague o arquivo a menos que precise configurar
+novamente o ambiente local.
+
+ENTREGA
+Implementa as etapas 1 a 10 do roteiro: banco, conexão, autenticação,
+sessão, logout, menu, CRUD de artistas e músicas, upload e filtros.
+O visual foi preservado do CSS original.
+
+VERIFICAÇÃO
+Arquivos e referências locais conferidos. Este ambiente não tem PHP nem
+MySQL disponíveis; não foi possível executar o sistema e testar o banco
+aqui. A execução final depende dos passos de configuração acima.
+Projeto didático para execução local.
