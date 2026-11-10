@@ -1,4 +1,4 @@
-# 🎵 Sistema Musical — Fase 2
+# 🎵 PROJETO:artistas/musicas — Fase 2
 
 **Projeto acadêmico do Curso Técnico em Desenvolvimento de Sistemas — SENAI**
 
